@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios contables, tributarios y financieros | Impulso</title>
+    <meta
+      name="description"
+      content="Subproductos de servicios contables, tributarios y financieros de Impulso."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .service-page {
+        padding: 3.5rem 0 5rem;
+      }
+
+      .service-layout {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      .service-intro {
+        background: var(--surface);
+        border: 1px solid var(--stroke);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+      }
+
+      .subproducts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .subproduct-card {
+        background: #fff;
+        border: 1px solid var(--stroke);
+        border-radius: var(--radius-md);
+        padding: 1rem;
+      }
+
+      .subproduct-card h3 {
+        margin-bottom: 0.5rem;
+        color: var(--accent-deep);
+        font-size: 1.05rem;
+      }
+
+      .subproduct-card p {
+        margin: 0;
+        color: var(--text-muted);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 1.2rem;
+        font-weight: 700;
+        color: var(--accent-deep);
+        text-decoration: none;
+      }
+
+      .back-link:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 980px) {
+        .subproducts-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .subproducts-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="service-page">
+      <div class="container service-layout">
+        <section class="service-intro">
+          <p class="eyebrow">Servicio especializado</p>
+          <h1>Servicios contables, tributarios y financieros</h1>
+          <p class="hero-copy">
+            Soluciones para mantener la salud financiera de tu empresa, cumplir normativas
+            y tomar decisiones con información confiable.
+          </p>
+          <a class="back-link" href="../index.html#servicios">Volver a servicios</a>
+        </section>
+
+        <section>
+          <h2>Subproductos</h2>
+          <div class="subproducts-grid">
+            <article class="subproduct-card">
+              <h3>Contabilidad mensual operativa</h3>
+              <p>Registro contable, conciliaciones y cierre periódico con control documental.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Planificacion tributaria anual</h3>
+              <p>Estrategias de optimizacion fiscal para reducir contingencias y mejorar carga tributaria.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Declaraciones y cumplimiento</h3>
+              <p>Preparacion y presentacion de declaraciones de impuestos en plazos definidos.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Control de flujo de caja</h3>
+              <p>Proyecciones semanales y mensuales para anticipar necesidades de liquidez.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Reportes financieros ejecutivos</h3>
+              <p>Informes claros para gerencia con indicadores de rentabilidad y sostenibilidad.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Auditoria interna de procesos</h3>
+              <p>Revision de procesos criticos para fortalecer controles y disminuir riesgos.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

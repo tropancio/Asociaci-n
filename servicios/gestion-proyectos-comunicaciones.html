@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion de proyectos y comunicaciones | Impulso</title>
+    <meta
+      name="description"
+      content="Subproductos de gestion de proyectos y comunicaciones de Impulso."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .service-page {
+        padding: 3.5rem 0 5rem;
+      }
+
+      .service-layout {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      .service-intro {
+        background: var(--surface);
+        border: 1px solid var(--stroke);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+      }
+
+      .subproducts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .subproduct-card {
+        background: #fff;
+        border: 1px solid var(--stroke);
+        border-radius: var(--radius-md);
+        padding: 1rem;
+      }
+
+      .subproduct-card h3 {
+        margin-bottom: 0.5rem;
+        color: var(--accent-deep);
+        font-size: 1.05rem;
+      }
+
+      .subproduct-card p {
+        margin: 0;
+        color: var(--text-muted);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 1.2rem;
+        font-weight: 700;
+        color: var(--accent-deep);
+        text-decoration: none;
+      }
+
+      .back-link:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 980px) {
+        .subproducts-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .subproducts-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="service-page">
+      <div class="container service-layout">
+        <section class="service-intro">
+          <p class="eyebrow">Servicio especializado</p>
+          <h1>Gestion de proyectos y comunicaciones</h1>
+          <p class="hero-copy">
+            Dirigimos iniciativas complejas y ordenamos la comunicacion para que equipos,
+            lideres y stakeholders avancen con claridad.
+          </p>
+          <a class="back-link" href="../index.html#servicios">Volver a servicios</a>
+        </section>
+
+        <section>
+          <h2>Subproductos</h2>
+          <div class="subproducts-grid">
+            <article class="subproduct-card">
+              <h3>Oficina de gestion de proyectos (PMO)</h3>
+              <p>Estandares, metodologias y tableros de control para iniciativas simultaneas.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Planificacion integral</h3>
+              <p>Definicion de alcance, cronograma, recursos y ruta critica por fases.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Gestion de riesgos y contingencias</h3>
+              <p>Identificacion temprana de riesgos con planes de mitigacion y respuesta.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Comunicacion ejecutiva</h3>
+              <p>Diseño de reportes y mensajes clave para directorio, gerencia y equipos.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Gestion de stakeholders</h3>
+              <p>Mapeo de actores, plan de relacionamiento y gestion de expectativas.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Facilitacion de workshops</h3>
+              <p>Sesiones colaborativas para alineacion de objetivos y toma de decisiones.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

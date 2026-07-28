@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integracion, migracion y datos | Impulso</title>
+    <meta
+      name="description"
+      content="Subproductos de integracion, migracion de sistemas y analisis de datos de Impulso."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .service-page {
+        padding: 3.5rem 0 5rem;
+      }
+
+      .service-layout {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      .service-intro {
+        background: var(--surface);
+        border: 1px solid var(--stroke);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+      }
+
+      .subproducts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .subproduct-card {
+        background: #fff;
+        border: 1px solid var(--stroke);
+        border-radius: var(--radius-md);
+        padding: 1rem;
+      }
+
+      .subproduct-card h3 {
+        margin-bottom: 0.5rem;
+        color: var(--accent-deep);
+        font-size: 1.05rem;
+      }
+
+      .subproduct-card p {
+        margin: 0;
+        color: var(--text-muted);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 1.2rem;
+        font-weight: 700;
+        color: var(--accent-deep);
+        text-decoration: none;
+      }
+
+      .back-link:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 980px) {
+        .subproducts-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .subproducts-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="service-page">
+      <div class="container service-layout">
+        <section class="service-intro">
+          <p class="eyebrow">Servicio especializado</p>
+          <h1>Integracion, migracion de sistemas, gestion y analisis de datos</h1>
+          <p class="hero-copy">
+            Conectamos tus plataformas, migramos informacion critica y convertimos datos
+            dispersos en decisiones accionables.
+          </p>
+          <a class="back-link" href="../index.html#servicios">Volver a servicios</a>
+        </section>
+
+        <section>
+          <h2>Subproductos</h2>
+          <div class="subproducts-grid">
+            <article class="subproduct-card">
+              <h3>Integracion de APIs empresariales</h3>
+              <p>Conexion segura entre ERP, CRM, ecommerce y aplicaciones internas.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Migracion de bases de datos</h3>
+              <p>Traslado de datos con validacion, trazabilidad y minima interrupcion operacional.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Limpieza y calidad de datos</h3>
+              <p>Normalizacion, deduplicacion y reglas de calidad para datos confiables.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Modelamiento de data warehouse</h3>
+              <p>Diseno de estructuras analiticas para consolidar informacion historica.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Dashboards de inteligencia de negocios</h3>
+              <p>Tableros con KPIs de operacion, ventas, costos y productividad en tiempo real.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Analitica avanzada</h3>
+              <p>Segmentacion, prediccion y deteccion de patrones para decisiones de alto impacto.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

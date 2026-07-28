@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatizacion y soluciones empresariales | Impulso</title>
+    <meta
+      name="description"
+      content="Subproductos de automatizacion de procesos y desarrollo de soluciones empresariales de Impulso."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .service-page {
+        padding: 3.5rem 0 5rem;
+      }
+
+      .service-layout {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      .service-intro {
+        background: var(--surface);
+        border: 1px solid var(--stroke);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+      }
+
+      .subproducts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .subproduct-card {
+        background: #fff;
+        border: 1px solid var(--stroke);
+        border-radius: var(--radius-md);
+        padding: 1rem;
+      }
+
+      .subproduct-card h3 {
+        margin-bottom: 0.5rem;
+        color: var(--accent-deep);
+        font-size: 1.05rem;
+      }
+
+      .subproduct-card p {
+        margin: 0;
+        color: var(--text-muted);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 1.2rem;
+        font-weight: 700;
+        color: var(--accent-deep);
+        text-decoration: none;
+      }
+
+      .back-link:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 980px) {
+        .subproducts-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .subproducts-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="service-page">
+      <div class="container service-layout">
+        <section class="service-intro">
+          <p class="eyebrow">Servicio especializado</p>
+          <h1>Automatizacion de procesos y desarrollo de soluciones empresariales</h1>
+          <p class="hero-copy">
+            Diseñamos automatizaciones y productos digitales para reducir trabajo manual,
+            escalar operaciones y aumentar eficiencia de punta a punta.
+          </p>
+          <a class="back-link" href="../index.html#servicios">Volver a servicios</a>
+        </section>
+
+        <section>
+          <h2>Subproductos</h2>
+          <div class="subproducts-grid">
+            <article class="subproduct-card">
+              <h3>Automatizacion de flujos administrativos</h3>
+              <p>Flujos automáticos para aprobaciones, reportes y tareas recurrentes internas.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Bots de notificacion y seguimiento</h3>
+              <p>Alertas automáticas por correo y mensajeria para hitos operativos clave.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Portales internos de autoservicio</h3>
+              <p>Herramientas para que equipos gestionen solicitudes sin friccion.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Desarrollo low-code/no-code</h3>
+              <p>Implementacion rapida de soluciones de negocio con tiempos de entrega cortos.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Integracion con sistemas de facturacion</h3>
+              <p>Conexion de procesos comerciales y financieros para un ciclo completo.</p>
+            </article>
+            <article class="subproduct-card">
+              <h3>Soporte evolutivo y mejora continua</h3>
+              <p>Ajustes, optimizaciones y nuevas funcionalidades segun crecimiento del negocio.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
